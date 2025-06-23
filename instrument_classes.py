@@ -5,7 +5,7 @@ class CashFlows:
         self.maturities = []
         self.amounts = []
     
-    # add a cash flow to the cash flow list
+    # add a cash flow to the cash flow list you good thing
     def add_cash_flow(self, maturity, amount):
         self.maturities.append(maturity)
         self.amounts.append(amount)
