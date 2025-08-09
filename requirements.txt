@@ -2,3 +2,4 @@ pandas
 numpy
 math
 tabulate
+pytest
