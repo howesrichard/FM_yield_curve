@@ -93,7 +93,7 @@ class YieldCurve(ZeroCurve):
 
     # set the constituent portfolio
     # the portfolio must contain bills and bonds in order of maturity
-    # where all each successive bond only introduces one new cashflow beyond 
+    # where all each successive bond only introduces one new cashflow beyond
     #       the longest maturity to that point (being the maturity cashflow)
     def set_constituent_portfolio(self, portfolio):
         self.portfolio = portfolio
@@ -111,7 +111,7 @@ class YieldCurve(ZeroCurve):
             bond_amounts = bond.get_amounts()
             for i in range(1, len(bond_amounts)-1):
                 pv += bond_amounts[i]*self.get_discount_factor(bond_dates[i])
-            print("PV of all the cashflows except maturity is: ", pv)
-            print("The bond price is: ", bond.get_price())
-            print("The last cashflow is: ", bond_amounts[-1])
+            # print("PV of all the cashflows except maturity is: ", pv)
+            # print("The bond price is: ", bond.get_price())
+            # print("The last cashflow is: ", bond_amounts[-1])
             self.add_discount_factor(bond.get_maturity(),(bond.get_price()-pv)/bond.get_amounts()[-1])
