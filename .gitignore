@@ -1,2 +1,13 @@
+# Python cache files
 *.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.py[cod]
+
+# Jupyter Notebook checkpoints and metadata
 .ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# VS Code settings (optional)
+.vscode/
