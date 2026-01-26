@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fm-yield-curve"
+version = "0.1.0"
+description = "Financial Markets Yield Curve Analysis Tools"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [
+    {name = "Richard"}
+]
+dependencies = [
+    "numpy",
+    "pandas",
+    # Add other dependencies
+]
+
+[tool.setuptools]
+py-modules = ["instrument_classes", "curve_classes_and_functions"]
